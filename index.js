@@ -2,8 +2,7 @@ let firstWord = prompt('Please Enter your first word/sentense?')
 let secondWord = prompt('Please Enter your second word/sentense?')
 
 
-
-// challenge1
+// challenge1=====================
 if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
     
     if(firstWord.length > secondWord.length){
@@ -16,10 +15,24 @@ if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
         console.log(`The ${secondWord} is ${secondWord.length} letter`);
     }
 }else{
-    // challenge2
+    // challenge2==================
     let firstS = firstWord;
     let secondS = secondWord;
+    // compare the number of words
+    let firstNum = firstWord.split(' ').length;
+    let secondNum = secondWord.split(' ').length;
+    
+    if(firstNum > secondNum){
+        console.log(`The first sentence you entered: "${firstS}" is longer than the second sentence you entered: "${secondS}"`);
+        console.log(`The "${firstS}" is ${firstNum} word`);
+        console.log(`The "${secondS}" is ${secondNum} word`);
+    }else{
+        console.log(`The second sentence you entered: "${secondS}" is longer than the first sentence you entered: "${firstS}"`);
+        console.log(`The "${firstS}" is ${firstNum} word`);
+        console.log(`The "${secondS}" is ${secondNum} word`);
+    }
 
+    // compares the number of letters/characters
     let firstSentence = firstS.split(' ').join('');
     let secondSentence = secondS.split(' ').join('');
 
