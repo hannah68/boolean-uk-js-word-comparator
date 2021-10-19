@@ -6,13 +6,13 @@ let secondWord = prompt('Please Enter your second word/sentense?')
 if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
     
     if(firstWord.length > secondWord.length){
-        console.log(`The first word you entered: "${firstWord}" is longer than the second word you entered: "${secondWord}"`);
-        console.log(`The ${firstWord} is ${firstWord.length} letter`);
-        console.log(`The ${secondWord} is ${secondWord.length} letter`);
+        console.log(`The first word you entered: "${firstWord}" is longer than the second word you entered: "${secondWord}".`);
+        console.log(`The ${firstWord} is ${firstWord.length} letter.`);
+        console.log(`The ${secondWord} is ${secondWord.length} letter.`);
     }else{
-        console.log(`The second word you entered: "${secondWord}" is longer than the first word you entered: "${firstWord}"`);
-        console.log(`The ${firstWord} is ${firstWord.length} letter`);
-        console.log(`The ${secondWord} is ${secondWord.length} letter`);
+        console.log(`The second word you entered: "${secondWord}" is longer than the first word you entered: "${firstWord}".`);
+        console.log(`The ${firstWord} is ${firstWord.length} letter.`);
+        console.log(`The ${secondWord} is ${secondWord.length} letter.`);
     }
 }else{
     // challenge2==================
@@ -23,13 +23,15 @@ if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
     let secondNum = secondWord.split(' ').length;
     
     if(firstNum > secondNum){
-        console.log(`The first sentence you entered: "${firstS}" is longer than the second sentence you entered: "${secondS}"`);
-        console.log(`The "${firstS}" is ${firstNum} word`);
-        console.log(`The "${secondS}" is ${secondNum} word`);
+        console.log(`The first sentence you entered: "${firstS}" is longer than the second sentence you entered: "${secondS}".`);
+        console.log(`The "${firstS}" is ${firstNum} word.`);
+        console.log(`The "${secondS}" is ${secondNum} word.`);
+        console.log('=================');
     }else{
-        console.log(`The second sentence you entered: "${secondS}" is longer than the first sentence you entered: "${firstS}"`);
-        console.log(`The "${firstS}" is ${firstNum} word`);
-        console.log(`The "${secondS}" is ${secondNum} word`);
+        console.log(`The second sentence you entered: "${secondS}" is longer than the first sentence you entered: "${firstS}".`);
+        console.log(`The "${firstS}" is ${firstNum} word.`);
+        console.log(`The "${secondS}" is ${secondNum} word.`);
+        console.log('=================');
     }
 
     // compares the number of letters/characters
@@ -37,13 +39,13 @@ if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
     let secondSentence = secondS.split(' ').join('');
 
     if(firstSentence.length > secondSentence.length){
-        console.log(`The first sentence you entered: "${firstS}" is longer than the second sentence you entered: "${secondS}"`);
-        console.log(`The "${firstS}" is ${firstSentence.length} letter`);
-        console.log(`The "${secondS}" is ${secondSentence.length} letter`);
+        console.log(`The first sentence you entered: "${firstS}" is longer than the second sentence you entered: "${secondS}".`);
+        console.log(`The "${firstS}" is ${firstSentence.length} letter.`);
+        console.log(`The "${secondS}" is ${secondSentence.length} letter.`);
     }else{
-        console.log(`The second sentence you entered: "${secondS}" is longer than the first sentence you entered: "${firstS}"`);
-        console.log(`The "${firstS}" is ${firstSentence.length} letter`);
-        console.log(`The "${secondS}" is ${secondSentence.length} letter`);
+        console.log(`The second sentence you entered: "${secondS}" is longer than the first sentence you entered: "${firstS}".`);
+        console.log(`The "${firstS}" is ${firstSentence.length} letter.`);
+        console.log(`The "${secondS}" is ${secondSentence.length} letter.`);
     }
 }
 
