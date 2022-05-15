@@ -18,7 +18,7 @@ if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
     // challenge2==================
     let firstS = firstWord;
     let secondS = secondWord;
-    // compare the number of words
+    // compare the number of words***********************
     let firstNum = firstWord.split(' ').length;
     let secondNum = secondWord.split(' ').length;
     
@@ -34,7 +34,7 @@ if(!firstWord.trim().includes(' ') && !secondWord.trim().includes(' ')){
         console.log('=================');
     }
 
-    // compares the number of letters/characters
+    // compares the number of letters/characters*****************
     let firstSentence = firstS.split(' ').join('');
     let secondSentence = secondS.split(' ').join('');
 
